@@ -3,25 +3,25 @@
 class CategoryController extends Controller
 {
     /**
-	 * Display a list of all Categories
-	 *
-	 * @return \Illuminate\View\View
-	 */
-	public function index()
-	{
+     * Display a list of all Categories
+     *
+     * @return \Illuminate\View\View
+     */
+    public function index()
+    {
         $categories = Category::all();
 
-		return View::make('category.index', compact('categories'));
-	}
+        return View::make('category.index', compact('categories'));
+    }
 
-	/**
-	 * Create a new Category
-	 *
-	 * @return \Illuminate\View\View | \Illuminate\Http\RedirectResponse
-	 */
-	public function create()
-	{
-		if (Request::isMethod('GET')) {
+    /**
+     * Create a new Category
+     *
+     * @return \Illuminate\View\View | \Illuminate\Http\RedirectResponse
+     */
+    public function create()
+    {
+        if (Request::isMethod('GET')) {
             return View::make('category.create');
         }
         elseif (Request::isMethod('POST')) {
@@ -34,20 +34,20 @@ class CategoryController extends Controller
 
             return Redirect::to('/categories')->with('success', 'Category created');
         }
-	}
+    }
 
-	/**
-	 * Update Category name
-	 *
-	 * @param int $categoryId
+    /**
+     * Update Category name
      *
-	 * @return \Illuminate\View\View | \Illuminate\Http\RedirectResponse
-	 */
-	public function update($categoryId)
-	{
+     * @param int $categoryId
+     *
+     * @return \Illuminate\View\View | \Illuminate\Http\RedirectResponse
+     */
+    public function update($categoryId)
+    {
         $category = Category::findOrFail($categoryId);
 
-		if (Request::isMethod('GET')) {
+        if (Request::isMethod('GET')) {
             return View::make('category.update', compact('category'));
         }
         elseif (Request::isMethod('POST')) {
@@ -60,17 +60,17 @@ class CategoryController extends Controller
 
             return Redirect::to('/categories')->with('success', 'Category updated');
         }
-	}
+    }
 
-	/**
-	 * Delete Category, related Albums & Images
-	 *
-	 * @param int $categoryId
+    /**
+     * Delete Category, related Albums & Images
      *
-	 * @return \Illuminate\View\View | \Illuminate\Http\RedirectResponse
-	 */
-	public function delete($categoryId)
-	{
+     * @param int $categoryId
+     *
+     * @return \Illuminate\View\View | \Illuminate\Http\RedirectResponse
+     */
+    public function delete($categoryId)
+    {
         $category = Category::findOrFail($categoryId);
 
         if (Request::isMethod('GET')) {
@@ -81,5 +81,5 @@ class CategoryController extends Controller
 
             return Redirect::to('/categories')->with('success', 'Category deleted');
         }
-	}
+    }
 }
