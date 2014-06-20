@@ -8,8 +8,8 @@ __Simple and secure archive for images:__
 
 The purpose of this project was for internal use of a company, so no big effort went into the presentation - it's simple and clean bootstrap ready for further improvements.
 
-![Laravel Image Archive](https://dl.dropboxusercontent.com/s/mq1fwyyju7sw7fg/l2.png)
-![Laravel Image Archive](https://dl.dropboxusercontent.com/s/cc5ff2s9pv9i8q1/l1.png)
+![Laravel Image Archive](https://dl.dropboxusercontent.com/s/pvj8cyagqo0165o/laravel-image-archive-1.png)
+![Laravel Image Archive](https://dl.dropboxusercontent.com/s/o2diyvioy8f4gli/laravel-image-archive-2.png)
 
 ##### Dependencies
 * PHP 5.4 (short array syntax)
