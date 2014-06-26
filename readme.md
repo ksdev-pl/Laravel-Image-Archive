@@ -17,7 +17,7 @@ The purpose of this project was for internal use of a company, so no big effort 
 * [__Intervention Image:__](https://github.com/Intervention/image) 2.*
 * [__DropzoneJS:__](https://github.com/enyo/dropzone) 3.10.2
 * [__DataTables:__](https://github.com/DataTables/DataTables) 1.10.0
-* [__Twitter Bootstrap:__](https://github.com/twbs/bootstrap) 3.1.1
+* [__Twitter Bootstrap:__](https://github.com/twbs/bootstrap) 3.2.0
 * [__Magnific Popup:__](https://github.com/dimsemenov/Magnific-Popup) 0.9.9
 
 ##### Installation
