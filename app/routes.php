@@ -11,10 +11,12 @@
 |
 */
 
-Route::pattern('categoryId', '[0-9]+');
-Route::pattern('albumId', '[0-9]+');
-Route::pattern('imageId', '[0-9]+');
-Route::pattern('userId', '[0-9]+');
+Route::patterns([
+    'categoryId' => '[0-9]+',
+    'albumId' => '[0-9]+',
+    'imageId' => '[0-9]+',
+    'userId' => '[0-9]+'
+]);
 
 // Categories
 
