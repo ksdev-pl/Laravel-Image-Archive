@@ -7,7 +7,7 @@ use Illuminate\Auth\Reminders\RemindableInterface;
 
 class User extends Eloquent implements UserInterface, RemindableInterface
 {
-	use UserTrait, RemindableTrait;
+    use UserTrait, RemindableTrait;
 
     /** @type array $rules  Validation rules */
     public static $rules = [
@@ -19,8 +19,8 @@ class User extends Eloquent implements UserInterface, RemindableInterface
     /** @type array $fillable  Fillable attributes */
     protected $fillable = ['email', 'password', 'role'];
 
-	/** @type array $hidden  Attributes excluded from the model's array or JSON */
-	protected $hidden = ['password', 'remember_token'];
+    /** @type array $hidden  Attributes excluded from the model's array or JSON */
+    protected $hidden = ['password', 'remember_token'];
 
     /** Numeric equivalent of user roles */
     const ADMIN = 1, NORMAL = 2, RESTRICTED = 3;
